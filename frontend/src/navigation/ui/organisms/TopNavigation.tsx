@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 
-import { AvatarPhoto, Link, NavLink, Button } from 'src/ui';
-import { useAuth } from 'src/auth/context-ui';
 import { route } from 'src/Routes';
+import { useAuth } from 'src/auth/context-ui';
+import { AvatarPhoto, Button, Link, NavLink } from 'src/ui';
 
 export type TopNavigationProps = Record<string, never>;
 
@@ -20,7 +20,7 @@ export function TopNavigation(props: TopNavigationProps) {
         className="b white flex items-center pv2 ph3"
       >
         <FontAwesomeIcon icon={faFeatherAlt} className="mr2 f4" />
-        Quacker
+        Bliss
       </Link>
       <div className="flex-grow flex items-center">
         <NavLink end to={route.home()} className="pa3">

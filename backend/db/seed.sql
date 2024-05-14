@@ -21,9 +21,9 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `userName`, `profileImageUrl`) VALUES
-(1, 'Young Gatchell', 'yg123@quacker.cz', 'notHashedPassword1', 'yg123', 'http://mrmrs.github.io/photos/p/1.jpg'),
-(2, 'Gatchell Young', 'gyoung@quacker.cz', 'notHashedPassword2', 'gyoung', 'http://mrmrs.github.io/photos/p/2.jpg'),
-(3, 'Mitchel Old', 'oldmit@quacker.cz', 'notHashedPassword3', 'oldmit', 'http://mrmrs.github.io/photos/p/3.jpg');
+(1, 'Young Gatchell', 'yg123@bliss.cz', 'notHashedPassword1', 'yg123', 'http://mrmrs.github.io/photos/p/1.jpg'),
+(2, 'Gatchell Young', 'gyoung@bliss.cz', 'notHashedPassword2', 'gyoung', 'http://mrmrs.github.io/photos/p/2.jpg'),
+(3, 'Mitchel Old', 'oldmit@bliss.cz', 'notHashedPassword3', 'oldmit', 'http://mrmrs.github.io/photos/p/3.jpg');
 
 ALTER TABLE `quack`
   ADD PRIMARY KEY (`id`);

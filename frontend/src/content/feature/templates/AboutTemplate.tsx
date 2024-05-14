@@ -1,5 +1,5 @@
-import { Heading, MainSection } from 'src/ui';
 import { TopNavigation } from 'src/navigation/ui';
+import { Heading, MainSection } from 'src/ui';
 
 export type AboutTemplateProps = Record<string, never>;
 
@@ -8,7 +8,7 @@ export function AboutTemplate(props: AboutTemplateProps) {
     <>
       <TopNavigation />
       <MainSection>
-        <Heading>About Quacker</Heading>
+        <Heading>About Bliss</Heading>
         <p>
           Our company's mission is to collaboratively manufacture access to
           paradigms without losing sight of our original goal to interactively
