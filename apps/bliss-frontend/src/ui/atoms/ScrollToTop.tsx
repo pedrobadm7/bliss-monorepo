@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import type { ReactNode } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export type ScrollToTopProps = {
@@ -10,7 +10,7 @@ export function ScrollToTop({ children }: ScrollToTopProps) {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (process.env['NODE_ENV'] === 'test') {
+    if (import.meta.env['NODE_ENV'] === 'test') {
       return;
     }
     window.scrollTo(0, 0);

@@ -69,7 +69,7 @@ export function EnhancedApolloProvider({
   });
 
   const client = new ApolloClient({
-    connectToDevTools: process.env.NODE_ENV === 'development',
+    connectToDevTools: import.meta.env.NODE_ENV === 'development',
     link: from([logoutLink, authLink, httpLink]),
     cache: new InMemoryCache(),
     defaultOptions: {
