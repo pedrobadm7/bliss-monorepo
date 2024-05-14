@@ -3,8 +3,17 @@
   "nxVersion": "16.3.2",
   "deps": {
     "@swc/helpers": "~0.5.2",
+    "apollo-server-core": "3.12.0",
+    "apollo-server-express": "3.12.0",
+    "argon2": "0.30.3",
     "axios": "^1.0.0",
-    "express": "^4.18.1",
+    "body-parser": "1.20.2",
+    "cors": "2.8.5",
+    "dotenv-flow": "3.2.0",
+    "express": "4.18.2",
+    "graphql": "^15.8.0",
+    "jsonwebtoken": "9.0.0",
+    "mariadb": "2.5.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tslib": "^2.3.0",
@@ -57,6 +66,14 @@
         "hash": "13800677001662881425"
       },
       {
+        "file": "apps/bliss-backend/.gitignore",
+        "hash": "12933003414632826672"
+      },
+      {
+        "file": "apps/bliss-backend/db/seed.sql",
+        "hash": "15576156730336077745"
+      },
+      {
         "file": "apps/bliss-backend/jest.config.ts",
         "hash": "17892499124446609210"
       },
@@ -65,16 +82,80 @@
         "hash": "10663552335880355872"
       },
       {
+        "file": "apps/bliss-backend/README.md",
+        "hash": "17535844111269415760"
+      },
+      {
+        "file": "apps/bliss-backend/src/__mocks__/mockResolver.ts",
+        "hash": "6007401455166621852"
+      },
+      {
+        "file": "apps/bliss-backend/src/__mocks__/mocks.ts",
+        "hash": "6290683644167094731"
+      },
+      {
         "file": "apps/bliss-backend/src/assets/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-        "file": "apps/bliss-backend/src/main.ts",
-        "hash": "833021256085130541",
+        "file": "apps/bliss-backend/src/libs/connection.ts",
+        "hash": "9956558168025257243",
         "deps": [
-          "npm:express",
-          "npm:path"
+          "npm:mariadb"
         ]
+      },
+      {
+        "file": "apps/bliss-backend/src/libs/token.ts",
+        "hash": "15424565600700079301",
+        "deps": [
+          "npm:jsonwebtoken"
+        ]
+      },
+      {
+        "file": "apps/bliss-backend/src/main.ts",
+        "hash": "10206630969186456000",
+        "deps": [
+          "npm:apollo-server-core",
+          "npm:apollo-server-express",
+          "npm:cors",
+          "npm:dotenv-flow",
+          "npm:express"
+        ]
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/quack/index.ts",
+        "hash": "442055703696336178"
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/quack/mutation.ts",
+        "hash": "9283628489463129849"
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/quack/query.ts",
+        "hash": "1342541492804786453"
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/rootResolver.ts",
+        "hash": "13586861904141331273"
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/user/helper.ts",
+        "hash": "9620163471113114176"
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/user/index.ts",
+        "hash": "442055703696336178"
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/user/mutation.ts",
+        "hash": "15665435444067888592",
+        "deps": [
+          "npm:argon2"
+        ]
+      },
+      {
+        "file": "apps/bliss-backend/src/modules/user/query.ts",
+        "hash": "13918343325894118654"
       },
       {
         "file": "apps/bliss-backend/tsconfig.app.json",
