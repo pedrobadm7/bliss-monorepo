@@ -1,4 +1,5 @@
 import { TopNavigation } from 'src/navigation/ui';
+
 import { Heading, MainSection } from 'src/ui';
 
 export type AboutTemplateProps = Record<string, never>;
