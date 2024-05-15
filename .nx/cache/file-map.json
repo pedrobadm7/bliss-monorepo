@@ -47,6 +47,7 @@
     "@swc-node/register": "~1.8.0",
     "@swc/cli": "0.3.12",
     "@swc/core": "~1.3.85",
+    "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "15.0.6",
     "@types/express": "4.17.13",
     "@types/jest": "^29.4.0",
@@ -153,60 +154,32 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".vscode/extensions.json",
-        "hash": "235626400633494639"
-      },
-      {
-        "file": ".prettierrc.yaml",
-        "hash": "8925373694883065826"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "13350529987637173023"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "package.json",
-        "hash": "8518489878551708814"
-      },
-      {
-        "file": "nx.json",
-        "hash": "13879897277802551114"
-      },
-      {
         "file": ".eslintrc.json",
         "hash": "4863409641517573816"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
       },
       {
         "file": ".nvmrc",
         "hash": "13132401969594980742"
       },
       {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
+        "file": "tsconfig.base.json",
+        "hash": "7535475864875981632"
       },
       {
-        "file": ".prettierignore",
-        "hash": "1858692744907916625"
+        "file": ".vscode/settings.json",
+        "hash": "13350529987637173023"
       },
       {
         "file": "yarn.lock",
-        "hash": "15340935380213847010"
+        "hash": "14435249549802482697"
       },
       {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7535475864875981632"
+        "file": ".prettierrc.yaml",
+        "hash": "8925373694883065826"
       },
       {
         "file": "README.md",
@@ -217,85 +190,43 @@
         "hash": "5443105041930014821"
       },
       {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "package.json",
+        "hash": "482694671100032446"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "1858692744907916625"
       },
       {
         "file": ".gitignore",
         "hash": "16873450909046209069"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13879897277802551114"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
       }
     ],
     "projectFileMap": {
-      "auth-feature": [
-        {
-          "file": "libs/auth/feature/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/auth/feature/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/auth/feature/README.md",
-          "hash": "16952641833898537584"
-        },
-        {
-          "file": "libs/auth/feature/jest.config.ts",
-          "hash": "11402968378237196160"
-        },
-        {
-          "file": "libs/auth/feature/project.json",
-          "hash": "4182735335596266205"
-        },
-        {
-          "file": "libs/auth/feature/src/index.ts",
-          "hash": "14732014096222465802"
-        },
-        {
-          "file": "libs/auth/feature/src/lib/index.ts",
-          "hash": "17113413549286409748"
-        },
-        {
-          "file": "libs/auth/feature/src/lib/pages/SignInPage.tsx",
-          "hash": "7787935247415928812",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:react-router-dom",
-            "auth-context-ui",
-            "auth-ui",
-            "navigation-util"
-          ]
-        },
-        {
-          "file": "libs/auth/feature/src/lib/pages/SignUpPage.tsx",
-          "hash": "2761097763160233295",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:react-router-dom",
-            "auth-context-ui",
-            "auth-ui",
-            "navigation-util"
-          ]
-        },
-        {
-          "file": "libs/auth/feature/src/lib/pages/index.ts",
-          "hash": "7655394267621577640"
-        },
-        {
-          "file": "libs/auth/feature/tsconfig.json",
-          "hash": "5803453740373313970"
-        },
-        {
-          "file": "libs/auth/feature/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        },
-        {
-          "file": "libs/auth/feature/tsconfig.spec.json",
-          "hash": "622485232520597903"
-        }
-      ],
       "auth-ui": [
         {
           "file": "libs/auth/ui/.babelrc",
@@ -392,6 +323,607 @@
           "hash": "622485232520597903"
         }
       ],
+      "bliss-backend-e2e": [
+        {
+          "file": "apps/bliss-backend-e2e/.eslintrc.json",
+          "hash": "8709851544463005581"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/jest.config.ts",
+          "hash": "10595568347954568263"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/project.json",
+          "hash": "3615803632914731173"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/bliss-backend/bliss-backend.spec.ts",
+          "hash": "4579662685003779048",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/support/test-setup.ts",
+          "hash": "10984585515912236441",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend-e2e/tsconfig.json",
+          "hash": "15443990093475294480"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/tsconfig.spec.json",
+          "hash": "14954872453723519891"
+        }
+      ],
+      "bliss-backend": [
+        {
+          "file": "apps/bliss-backend/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/bliss-backend/.gitignore",
+          "hash": "12933003414632826672"
+        },
+        {
+          "file": "apps/bliss-backend/README.md",
+          "hash": "17535844111269415760"
+        },
+        {
+          "file": "apps/bliss-backend/db/seed.sql",
+          "hash": "15576156730336077745"
+        },
+        {
+          "file": "apps/bliss-backend/jest.config.ts",
+          "hash": "17892499124446609210"
+        },
+        {
+          "file": "apps/bliss-backend/project.json",
+          "hash": "10663552335880355872"
+        },
+        {
+          "file": "apps/bliss-backend/src/__mocks__/mockResolver.ts",
+          "hash": "6007401455166621852"
+        },
+        {
+          "file": "apps/bliss-backend/src/__mocks__/mocks.ts",
+          "hash": "6290683644167094731"
+        },
+        {
+          "file": "apps/bliss-backend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/bliss-backend/src/libs/connection.ts",
+          "hash": "9956558168025257243",
+          "deps": [
+            "npm:mariadb"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend/src/libs/token.ts",
+          "hash": "15424565600700079301",
+          "deps": [
+            "npm:jsonwebtoken"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend/src/main.ts",
+          "hash": "10206630969186456000",
+          "deps": [
+            "npm:apollo-server-core",
+            "npm:apollo-server-express",
+            "npm:cors",
+            "npm:dotenv-flow",
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/quack/index.ts",
+          "hash": "442055703696336178"
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/quack/mutation.ts",
+          "hash": "9283628489463129849"
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/quack/query.ts",
+          "hash": "1342541492804786453"
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/rootResolver.ts",
+          "hash": "13586861904141331273"
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/user/helper.ts",
+          "hash": "9620163471113114176"
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/user/index.ts",
+          "hash": "442055703696336178"
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/user/mutation.ts",
+          "hash": "15665435444067888592",
+          "deps": [
+            "npm:argon2"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend/src/modules/user/query.ts",
+          "hash": "13918343325894118654"
+        },
+        {
+          "file": "apps/bliss-backend/tsconfig.app.json",
+          "hash": "6758816428596401805"
+        },
+        {
+          "file": "apps/bliss-backend/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/bliss-backend/tsconfig.spec.json",
+          "hash": "11550347367511341917"
+        },
+        {
+          "file": "apps/bliss-backend/webpack.config.js",
+          "hash": "10619490397189790225",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "auth-feature": [
+        {
+          "file": "libs/auth/feature/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/auth/feature/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/auth/feature/README.md",
+          "hash": "16952641833898537584"
+        },
+        {
+          "file": "libs/auth/feature/jest.config.ts",
+          "hash": "11402968378237196160"
+        },
+        {
+          "file": "libs/auth/feature/project.json",
+          "hash": "4182735335596266205"
+        },
+        {
+          "file": "libs/auth/feature/src/index.ts",
+          "hash": "14732014096222465802"
+        },
+        {
+          "file": "libs/auth/feature/src/lib/index.ts",
+          "hash": "17113413549286409748"
+        },
+        {
+          "file": "libs/auth/feature/src/lib/pages/SignInPage.tsx",
+          "hash": "7787935247415928812",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:react-router-dom",
+            "auth-context-ui",
+            "auth-ui",
+            "navigation-util"
+          ]
+        },
+        {
+          "file": "libs/auth/feature/src/lib/pages/SignUpPage.tsx",
+          "hash": "2761097763160233295",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:react-router-dom",
+            "auth-context-ui",
+            "auth-ui",
+            "navigation-util"
+          ]
+        },
+        {
+          "file": "libs/auth/feature/src/lib/pages/index.ts",
+          "hash": "7655394267621577640"
+        },
+        {
+          "file": "libs/auth/feature/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/auth/feature/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/auth/feature/tsconfig.spec.json",
+          "hash": "622485232520597903"
+        }
+      ],
+      "navigation-util": [
+        {
+          "file": "libs/navigation/util/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/navigation/util/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/navigation/util/README.md",
+          "hash": "12466098475641447760"
+        },
+        {
+          "file": "libs/navigation/util/jest.config.ts",
+          "hash": "659199899424076087"
+        },
+        {
+          "file": "libs/navigation/util/project.json",
+          "hash": "17068738503548244642"
+        },
+        {
+          "file": "libs/navigation/util/src/index.ts",
+          "hash": "14428353282588746736"
+        },
+        {
+          "file": "libs/navigation/util/src/lib/index.ts",
+          "hash": "8570450860005210146"
+        },
+        {
+          "file": "libs/navigation/util/src/lib/route.ts",
+          "hash": "13799956451758819534"
+        },
+        {
+          "file": "libs/navigation/util/src/lib/router.spec.ts",
+          "hash": "2383753989602458775"
+        },
+        {
+          "file": "libs/navigation/util/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/navigation/util/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/navigation/util/tsconfig.spec.json",
+          "hash": "622485232520597903"
+        }
+      ],
+      "quack-feature": [
+        {
+          "file": "libs/quack/feature/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/quack/feature/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/quack/feature/README.md",
+          "hash": "5527702220464399750"
+        },
+        {
+          "file": "libs/quack/feature/jest.config.ts",
+          "hash": "8283269640012393597"
+        },
+        {
+          "file": "libs/quack/feature/project.json",
+          "hash": "6669999684502745080"
+        },
+        {
+          "file": "libs/quack/feature/src/index.ts",
+          "hash": "14732014096222465802"
+        },
+        {
+          "file": "libs/quack/feature/src/lib/index.ts",
+          "hash": "17113413549286409748"
+        },
+        {
+          "file": "libs/quack/feature/src/lib/pages/HomePage.tsx",
+          "hash": "17111276719890327319",
+          "deps": [
+            "npm:@apollo/client",
+            "auth-context-ui",
+            "quack-ui",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/quack/feature/src/lib/pages/UserDetailPage.tsx",
+          "hash": "7936965171783384731",
+          "deps": [
+            "npm:@apollo/client",
+            "auth-context-ui",
+            "navigation-ui",
+            "quack-ui",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/quack/feature/src/lib/pages/index.ts",
+          "hash": "5618019290333520136"
+        },
+        {
+          "file": "libs/quack/feature/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/quack/feature/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/quack/feature/tsconfig.spec.json",
+          "hash": "622485232520597903"
+        }
+      ],
+      "quack-ui": [
+        {
+          "file": "libs/quack/ui/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/quack/ui/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/quack/ui/README.md",
+          "hash": "14659559091416803437"
+        },
+        {
+          "file": "libs/quack/ui/jest.config.ts",
+          "hash": "10443370954572797471"
+        },
+        {
+          "file": "libs/quack/ui/project.json",
+          "hash": "12993718522464215587"
+        },
+        {
+          "file": "libs/quack/ui/src/index.ts",
+          "hash": "9791646726395647099"
+        },
+        {
+          "file": "libs/quack/ui/src/lib/index.ts",
+          "hash": "18106944926323734295"
+        },
+        {
+          "file": "libs/quack/ui/src/lib/molecules/Quack.spec.tsx",
+          "hash": "16627849698946777521",
+          "deps": [
+            "npm:@testing-library/jest-dom",
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/src/lib/molecules/Quack.tsx",
+          "hash": "7686426738059456460",
+          "deps": [
+            "npm:@apollo/client",
+            "shared-design-system-ui",
+            "navigation-util"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/src/lib/molecules/QuackForm.tsx",
+          "hash": "9164163824341985292",
+          "deps": [
+            "npm:classnames",
+            "shared-design-system-ui"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/src/lib/molecules/index.ts",
+          "hash": "12636847932795964558"
+        },
+        {
+          "file": "libs/quack/ui/src/lib/organisms/QuackList.tsx",
+          "hash": "16005123346058346501",
+          "deps": [
+            "npm:@apollo/client",
+            "shared-design-system-ui"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/src/lib/organisms/index.ts",
+          "hash": "17873358410167745076"
+        },
+        {
+          "file": "libs/quack/ui/src/lib/templates/HomeTemplate.tsx",
+          "hash": "9400562806629510584",
+          "deps": [
+            "npm:@apollo/client",
+            "shared-design-system-ui",
+            "navigation-ui"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/src/lib/templates/UserDetailTemplate.tsx",
+          "hash": "8295112177123519950",
+          "deps": [
+            "npm:@apollo/client",
+            "navigation-ui",
+            "shared-design-system-ui"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/src/lib/templates/index.ts",
+          "hash": "17876711982068133815"
+        },
+        {
+          "file": "libs/quack/ui/src/lib/utils/date.ts",
+          "hash": "2865489361541151770",
+          "deps": [
+            "npm:date-fns"
+          ]
+        },
+        {
+          "file": "libs/quack/ui/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/quack/ui/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/quack/ui/tsconfig.spec.json",
+          "hash": "622485232520597903"
+        }
+      ],
+      "bliss-frontend": [
+        {
+          "file": "apps/bliss-frontend/.eslintrc.json",
+          "hash": "5085885982266215096"
+        },
+        {
+          "file": "apps/bliss-frontend/README.md",
+          "hash": "12805022728084869140"
+        },
+        {
+          "file": "apps/bliss-frontend/cypress.config.ts",
+          "hash": "3427209633921259920",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/bliss-frontend/cypress/e2e/app.cy.ts",
+          "hash": "2018436181007167317"
+        },
+        {
+          "file": "apps/bliss-frontend/cypress/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/bliss-frontend/cypress/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/bliss-frontend/cypress/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/bliss-frontend/cypress/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/bliss-frontend/cypress/tsconfig.json",
+          "hash": "5728752303788077312"
+        },
+        {
+          "file": "apps/bliss-frontend/index.html",
+          "hash": "3414707007593620762"
+        },
+        {
+          "file": "apps/bliss-frontend/project.json",
+          "hash": "11267405635742122461"
+        },
+        {
+          "file": "apps/bliss-frontend/public/favicon.ico",
+          "hash": "18110537510313794862"
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/Routes.tsx",
+          "hash": "11166363128466938960",
+          "deps": [
+            "content-feature",
+            "auth-feature",
+            "navigation-ui",
+            "navigation-util",
+            "quack-feature",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/app.spec.tsx",
+          "hash": "8669060347461050576",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/app.tsx",
+          "hash": "13567261134616185974",
+          "deps": [
+            "npm:react-router-dom",
+            "shared-design-system-ui",
+            "auth-context-ui"
+          ]
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/config.ts",
+          "hash": "6738030441542942971"
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/main.tsx",
+          "hash": "4027833255529445321",
+          "deps": [
+            "npm:react-dom",
+            "npm:tachyons",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/bliss-frontend/src/app/styles.css",
+          "hash": "988037321090929631"
+        },
+        {
+          "file": "apps/bliss-frontend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/bliss-frontend/src/utils/apollo.tsx",
+          "hash": "3692380850951603250",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/bliss-frontend/src/utils/mocks.ts",
+          "hash": "5322745524698344107"
+        },
+        {
+          "file": "apps/bliss-frontend/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/bliss-frontend/tsconfig.json",
+          "hash": "5987390969975188565"
+        },
+        {
+          "file": "apps/bliss-frontend/tsconfig.spec.json",
+          "hash": "17874504027954657085"
+        },
+        {
+          "file": "apps/bliss-frontend/vite.config.ts",
+          "hash": "1311301742796708546",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
       "content-feature": [
         {
           "file": "libs/content/feature/.babelrc",
@@ -451,6 +983,141 @@
         },
         {
           "file": "libs/content/feature/tsconfig.spec.json",
+          "hash": "622485232520597903"
+        }
+      ],
+      "auth-context-ui": [
+        {
+          "file": "libs/auth/context-ui/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/auth/context-ui/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/auth/context-ui/README.md",
+          "hash": "4992907591651078412"
+        },
+        {
+          "file": "libs/auth/context-ui/jest.config.ts",
+          "hash": "5342415912086980612"
+        },
+        {
+          "file": "libs/auth/context-ui/project.json",
+          "hash": "1813310259190889789"
+        },
+        {
+          "file": "libs/auth/context-ui/src/index.ts",
+          "hash": "16762210989675001536"
+        },
+        {
+          "file": "libs/auth/context-ui/src/lib/context-ui/AuthProvider.spec.tsx",
+          "hash": "5034359474307623155",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/auth/context-ui/src/lib/context-ui/AuthProvider.tsx",
+          "hash": "2161194427806614492",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/auth/context-ui/src/lib/context-ui/index.ts",
+          "hash": "9771690190060961674"
+        },
+        {
+          "file": "libs/auth/context-ui/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/auth/context-ui/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/auth/context-ui/tsconfig.spec.json",
+          "hash": "622485232520597903"
+        }
+      ],
+      "navigation-ui": [
+        {
+          "file": "libs/navigation/ui/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/navigation/ui/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/navigation/ui/README.md",
+          "hash": "16610075489855230664"
+        },
+        {
+          "file": "libs/navigation/ui/jest.config.ts",
+          "hash": "15876810953540699585"
+        },
+        {
+          "file": "libs/navigation/ui/project.json",
+          "hash": "7414285401329129222"
+        },
+        {
+          "file": "libs/navigation/ui/src/index.ts",
+          "hash": "15590812161596112340"
+        },
+        {
+          "file": "libs/navigation/ui/src/lib/index.ts",
+          "hash": "8973195078029657552"
+        },
+        {
+          "file": "libs/navigation/ui/src/lib/organisms/TopNavigation.tsx",
+          "hash": "15783026301508122958",
+          "deps": [
+            "npm:@fortawesome/free-solid-svg-icons",
+            "npm:@fortawesome/react-fontawesome",
+            "npm:react-router-dom",
+            "auth-context-ui",
+            "navigation-util",
+            "shared-design-system-ui"
+          ]
+        },
+        {
+          "file": "libs/navigation/ui/src/lib/organisms/index.ts",
+          "hash": "18205155829788871266"
+        },
+        {
+          "file": "libs/navigation/ui/src/lib/templates/PageNotFound.tsx",
+          "hash": "14339645496137041406",
+          "deps": [
+            "navigation-util",
+            "shared-design-system-ui"
+          ]
+        },
+        {
+          "file": "libs/navigation/ui/src/lib/templates/Placeholder.tsx",
+          "hash": "158843436049449556",
+          "deps": [
+            "shared-design-system-ui",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/navigation/ui/src/lib/templates/index.ts",
+          "hash": "952228032349948230"
+        },
+        {
+          "file": "libs/navigation/ui/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/navigation/ui/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/navigation/ui/tsconfig.spec.json",
           "hash": "622485232520597903"
         }
       ],
@@ -683,663 +1350,14 @@
         {
           "file": "libs/shared/design-system/ui/tsconfig.spec.json",
           "hash": "873295446410179192"
-        }
-      ],
-      "bliss-backend-e2e": [
-        {
-          "file": "apps/bliss-backend-e2e/.eslintrc.json",
-          "hash": "8709851544463005581"
         },
         {
-          "file": "apps/bliss-backend-e2e/jest.config.ts",
-          "hash": "10595568347954568263"
-        },
-        {
-          "file": "apps/bliss-backend-e2e/project.json",
-          "hash": "3615803632914731173"
-        },
-        {
-          "file": "apps/bliss-backend-e2e/src/bliss-backend/bliss-backend.spec.ts",
-          "hash": "4579662685003779048",
+          "file": "libs/shared/design-system/ui/src/lib/molecules/Field.spec.tsx",
+          "hash": "3182347252857815544",
           "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/bliss-backend-e2e/src/support/global-setup.ts",
-          "hash": "2568409276037275290"
-        },
-        {
-          "file": "apps/bliss-backend-e2e/src/support/global-teardown.ts",
-          "hash": "5275447082211835490"
-        },
-        {
-          "file": "apps/bliss-backend-e2e/src/support/test-setup.ts",
-          "hash": "10984585515912236441",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/bliss-backend-e2e/tsconfig.json",
-          "hash": "15443990093475294480"
-        },
-        {
-          "file": "apps/bliss-backend-e2e/tsconfig.spec.json",
-          "hash": "14954872453723519891"
-        }
-      ],
-      "bliss-backend": [
-        {
-          "file": "apps/bliss-backend/.eslintrc.json",
-          "hash": "13800677001662881425"
-        },
-        {
-          "file": "apps/bliss-backend/.gitignore",
-          "hash": "12933003414632826672"
-        },
-        {
-          "file": "apps/bliss-backend/README.md",
-          "hash": "17535844111269415760"
-        },
-        {
-          "file": "apps/bliss-backend/db/seed.sql",
-          "hash": "15576156730336077745"
-        },
-        {
-          "file": "apps/bliss-backend/jest.config.ts",
-          "hash": "17892499124446609210"
-        },
-        {
-          "file": "apps/bliss-backend/project.json",
-          "hash": "10663552335880355872"
-        },
-        {
-          "file": "apps/bliss-backend/src/__mocks__/mockResolver.ts",
-          "hash": "6007401455166621852"
-        },
-        {
-          "file": "apps/bliss-backend/src/__mocks__/mocks.ts",
-          "hash": "6290683644167094731"
-        },
-        {
-          "file": "apps/bliss-backend/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/bliss-backend/src/libs/connection.ts",
-          "hash": "9956558168025257243",
-          "deps": [
-            "npm:mariadb"
-          ]
-        },
-        {
-          "file": "apps/bliss-backend/src/libs/token.ts",
-          "hash": "15424565600700079301",
-          "deps": [
-            "npm:jsonwebtoken"
-          ]
-        },
-        {
-          "file": "apps/bliss-backend/src/main.ts",
-          "hash": "10206630969186456000",
-          "deps": [
-            "npm:apollo-server-core",
-            "npm:apollo-server-express",
-            "npm:cors",
-            "npm:dotenv-flow",
-            "npm:express"
-          ]
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/quack/index.ts",
-          "hash": "442055703696336178"
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/quack/mutation.ts",
-          "hash": "9283628489463129849"
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/quack/query.ts",
-          "hash": "1342541492804786453"
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/rootResolver.ts",
-          "hash": "13586861904141331273"
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/user/helper.ts",
-          "hash": "9620163471113114176"
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/user/index.ts",
-          "hash": "442055703696336178"
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/user/mutation.ts",
-          "hash": "15665435444067888592",
-          "deps": [
-            "npm:argon2"
-          ]
-        },
-        {
-          "file": "apps/bliss-backend/src/modules/user/query.ts",
-          "hash": "13918343325894118654"
-        },
-        {
-          "file": "apps/bliss-backend/tsconfig.app.json",
-          "hash": "6758816428596401805"
-        },
-        {
-          "file": "apps/bliss-backend/tsconfig.json",
-          "hash": "3490524966360018312"
-        },
-        {
-          "file": "apps/bliss-backend/tsconfig.spec.json",
-          "hash": "11550347367511341917"
-        },
-        {
-          "file": "apps/bliss-backend/webpack.config.js",
-          "hash": "10619490397189790225",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
-      "quack-feature": [
-        {
-          "file": "libs/quack/feature/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/quack/feature/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/quack/feature/README.md",
-          "hash": "5527702220464399750"
-        },
-        {
-          "file": "libs/quack/feature/jest.config.ts",
-          "hash": "8283269640012393597"
-        },
-        {
-          "file": "libs/quack/feature/project.json",
-          "hash": "6669999684502745080"
-        },
-        {
-          "file": "libs/quack/feature/src/index.ts",
-          "hash": "14732014096222465802"
-        },
-        {
-          "file": "libs/quack/feature/src/lib/index.ts",
-          "hash": "17113413549286409748"
-        },
-        {
-          "file": "libs/quack/feature/src/lib/pages/HomePage.tsx",
-          "hash": "17111276719890327319",
-          "deps": [
-            "npm:@apollo/client",
-            "auth-context-ui",
-            "quack-ui",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/quack/feature/src/lib/pages/UserDetailPage.tsx",
-          "hash": "7936965171783384731",
-          "deps": [
-            "npm:@apollo/client",
-            "auth-context-ui",
-            "navigation-ui",
-            "quack-ui",
-            "npm:react",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "libs/quack/feature/src/lib/pages/index.ts",
-          "hash": "5618019290333520136"
-        },
-        {
-          "file": "libs/quack/feature/tsconfig.json",
-          "hash": "5803453740373313970"
-        },
-        {
-          "file": "libs/quack/feature/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        },
-        {
-          "file": "libs/quack/feature/tsconfig.spec.json",
-          "hash": "622485232520597903"
-        }
-      ],
-      "navigation-ui": [
-        {
-          "file": "libs/navigation/ui/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/navigation/ui/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/navigation/ui/README.md",
-          "hash": "16610075489855230664"
-        },
-        {
-          "file": "libs/navigation/ui/jest.config.ts",
-          "hash": "15876810953540699585"
-        },
-        {
-          "file": "libs/navigation/ui/project.json",
-          "hash": "7414285401329129222"
-        },
-        {
-          "file": "libs/navigation/ui/src/index.ts",
-          "hash": "15590812161596112340"
-        },
-        {
-          "file": "libs/navigation/ui/src/lib/index.ts",
-          "hash": "8973195078029657552"
-        },
-        {
-          "file": "libs/navigation/ui/src/lib/organisms/TopNavigation.tsx",
-          "hash": "15783026301508122958",
-          "deps": [
-            "npm:@fortawesome/free-solid-svg-icons",
-            "npm:@fortawesome/react-fontawesome",
-            "npm:react-router-dom",
-            "auth-context-ui",
-            "navigation-util",
-            "shared-design-system-ui"
-          ]
-        },
-        {
-          "file": "libs/navigation/ui/src/lib/organisms/index.ts",
-          "hash": "18205155829788871266"
-        },
-        {
-          "file": "libs/navigation/ui/src/lib/templates/PageNotFound.tsx",
-          "hash": "14339645496137041406",
-          "deps": [
-            "navigation-util",
-            "shared-design-system-ui"
-          ]
-        },
-        {
-          "file": "libs/navigation/ui/src/lib/templates/Placeholder.tsx",
-          "hash": "158843436049449556",
-          "deps": [
-            "shared-design-system-ui",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/navigation/ui/src/lib/templates/index.ts",
-          "hash": "952228032349948230"
-        },
-        {
-          "file": "libs/navigation/ui/tsconfig.json",
-          "hash": "5803453740373313970"
-        },
-        {
-          "file": "libs/navigation/ui/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        },
-        {
-          "file": "libs/navigation/ui/tsconfig.spec.json",
-          "hash": "622485232520597903"
-        }
-      ],
-      "auth-context-ui": [
-        {
-          "file": "libs/auth/context-ui/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/auth/context-ui/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/auth/context-ui/README.md",
-          "hash": "4992907591651078412"
-        },
-        {
-          "file": "libs/auth/context-ui/jest.config.ts",
-          "hash": "5342415912086980612"
-        },
-        {
-          "file": "libs/auth/context-ui/project.json",
-          "hash": "1813310259190889789"
-        },
-        {
-          "file": "libs/auth/context-ui/src/index.ts",
-          "hash": "16762210989675001536"
-        },
-        {
-          "file": "libs/auth/context-ui/src/lib/context-ui/AuthProvider.tsx",
-          "hash": "2161194427806614492",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/auth/context-ui/src/lib/context-ui/index.ts",
-          "hash": "9771690190060961674"
-        },
-        {
-          "file": "libs/auth/context-ui/tsconfig.json",
-          "hash": "5803453740373313970"
-        },
-        {
-          "file": "libs/auth/context-ui/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        },
-        {
-          "file": "libs/auth/context-ui/tsconfig.spec.json",
-          "hash": "622485232520597903"
-        },
-        {
-          "file": "libs/auth/context-ui/src/lib/context-ui/AuthProvider.spec.tsx",
-          "hash": "7929418873205910708",
-          "deps": [
-            "npm:@testing-library/react",
-            "npm:react"
-          ]
-        }
-      ],
-      "quack-ui": [
-        {
-          "file": "libs/quack/ui/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/quack/ui/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/quack/ui/README.md",
-          "hash": "14659559091416803437"
-        },
-        {
-          "file": "libs/quack/ui/jest.config.ts",
-          "hash": "10443370954572797471"
-        },
-        {
-          "file": "libs/quack/ui/project.json",
-          "hash": "12993718522464215587"
-        },
-        {
-          "file": "libs/quack/ui/src/index.ts",
-          "hash": "9791646726395647099"
-        },
-        {
-          "file": "libs/quack/ui/src/lib/index.ts",
-          "hash": "18106944926323734295"
-        },
-        {
-          "file": "libs/quack/ui/src/lib/molecules/Quack.tsx",
-          "hash": "3384742742365178899",
-          "deps": [
-            "npm:@apollo/client",
-            "shared-design-system-ui",
-            "navigation-util"
-          ]
-        },
-        {
-          "file": "libs/quack/ui/src/lib/molecules/QuackForm.tsx",
-          "hash": "9164163824341985292",
-          "deps": [
-            "npm:classnames",
-            "shared-design-system-ui"
-          ]
-        },
-        {
-          "file": "libs/quack/ui/src/lib/molecules/index.ts",
-          "hash": "12636847932795964558"
-        },
-        {
-          "file": "libs/quack/ui/src/lib/organisms/QuackList.tsx",
-          "hash": "16005123346058346501",
-          "deps": [
-            "npm:@apollo/client",
-            "shared-design-system-ui"
-          ]
-        },
-        {
-          "file": "libs/quack/ui/src/lib/organisms/index.ts",
-          "hash": "17873358410167745076"
-        },
-        {
-          "file": "libs/quack/ui/src/lib/templates/HomeTemplate.tsx",
-          "hash": "9400562806629510584",
-          "deps": [
-            "npm:@apollo/client",
-            "shared-design-system-ui",
-            "navigation-ui"
-          ]
-        },
-        {
-          "file": "libs/quack/ui/src/lib/templates/UserDetailTemplate.tsx",
-          "hash": "8295112177123519950",
-          "deps": [
-            "npm:@apollo/client",
-            "navigation-ui",
-            "shared-design-system-ui"
-          ]
-        },
-        {
-          "file": "libs/quack/ui/src/lib/templates/index.ts",
-          "hash": "17876711982068133815"
-        },
-        {
-          "file": "libs/quack/ui/src/lib/utils/date.ts",
-          "hash": "2865489361541151770",
-          "deps": [
-            "npm:date-fns"
-          ]
-        },
-        {
-          "file": "libs/quack/ui/tsconfig.json",
-          "hash": "5803453740373313970"
-        },
-        {
-          "file": "libs/quack/ui/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        },
-        {
-          "file": "libs/quack/ui/tsconfig.spec.json",
-          "hash": "622485232520597903"
-        }
-      ],
-      "bliss-frontend": [
-        {
-          "file": "apps/bliss-frontend/.eslintrc.json",
-          "hash": "5085885982266215096"
-        },
-        {
-          "file": "apps/bliss-frontend/README.md",
-          "hash": "12805022728084869140"
-        },
-        {
-          "file": "apps/bliss-frontend/cypress.config.ts",
-          "hash": "3427209633921259920",
-          "deps": [
-            "npm:@nx/cypress",
-            "npm:cypress"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/cypress/e2e/app.cy.ts",
-          "hash": "2018436181007167317"
-        },
-        {
-          "file": "apps/bliss-frontend/cypress/fixtures/example.json",
-          "hash": "11785586596216172004"
-        },
-        {
-          "file": "apps/bliss-frontend/cypress/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "apps/bliss-frontend/cypress/support/commands.ts",
-          "hash": "5397443931564808659"
-        },
-        {
-          "file": "apps/bliss-frontend/cypress/support/e2e.ts",
-          "hash": "1054106023200826784"
-        },
-        {
-          "file": "apps/bliss-frontend/cypress/tsconfig.json",
-          "hash": "5728752303788077312"
-        },
-        {
-          "file": "apps/bliss-frontend/index.html",
-          "hash": "3414707007593620762"
-        },
-        {
-          "file": "apps/bliss-frontend/project.json",
-          "hash": "11267405635742122461"
-        },
-        {
-          "file": "apps/bliss-frontend/public/favicon.ico",
-          "hash": "18110537510313794862"
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/Routes.tsx",
-          "hash": "11166363128466938960",
-          "deps": [
-            "content-feature",
-            "auth-feature",
-            "navigation-ui",
-            "navigation-util",
-            "quack-feature",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/app.module.css",
-          "hash": "8887387885984320532"
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/app.spec.tsx",
-          "hash": "8669060347461050576",
-          "deps": [
+            "npm:@testing-library/jest-dom",
             "npm:@testing-library/react"
           ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/app.tsx",
-          "hash": "4778109074559760483",
-          "deps": [
-            "npm:react-router-dom",
-            "shared-design-system-ui",
-            "auth-context-ui"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/config.ts",
-          "hash": "6738030441542942971"
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/main.tsx",
-          "hash": "4027833255529445321",
-          "deps": [
-            "npm:react-dom",
-            "npm:tachyons",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/app/styles.css",
-          "hash": "988037321090929631"
-        },
-        {
-          "file": "apps/bliss-frontend/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/bliss-frontend/src/utils/apollo.tsx",
-          "hash": "3692380850951603250",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/utils/mocks.ts",
-          "hash": "5322745524698344107"
-        },
-        {
-          "file": "apps/bliss-frontend/tsconfig.app.json",
-          "hash": "7232119452847825095"
-        },
-        {
-          "file": "apps/bliss-frontend/tsconfig.json",
-          "hash": "5987390969975188565"
-        },
-        {
-          "file": "apps/bliss-frontend/tsconfig.spec.json",
-          "hash": "17874504027954657085"
-        },
-        {
-          "file": "apps/bliss-frontend/vite.config.ts",
-          "hash": "1311301742796708546",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "navigation-util": [
-        {
-          "file": "libs/navigation/util/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/navigation/util/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/navigation/util/README.md",
-          "hash": "12466098475641447760"
-        },
-        {
-          "file": "libs/navigation/util/jest.config.ts",
-          "hash": "659199899424076087"
-        },
-        {
-          "file": "libs/navigation/util/project.json",
-          "hash": "17068738503548244642"
-        },
-        {
-          "file": "libs/navigation/util/src/index.ts",
-          "hash": "14428353282588746736"
-        },
-        {
-          "file": "libs/navigation/util/src/lib/index.ts",
-          "hash": "8570450860005210146"
-        },
-        {
-          "file": "libs/navigation/util/src/lib/route.ts",
-          "hash": "13799956451758819534"
-        },
-        {
-          "file": "libs/navigation/util/tsconfig.json",
-          "hash": "5803453740373313970"
-        },
-        {
-          "file": "libs/navigation/util/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        },
-        {
-          "file": "libs/navigation/util/tsconfig.spec.json",
-          "hash": "622485232520597903"
-        },
-        {
-          "file": "libs/navigation/util/src/lib/router.spec.ts",
-          "hash": "2383753989602458775"
         }
       ]
     }
