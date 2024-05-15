@@ -2,7 +2,8 @@ import * as ReactDOM from 'react-dom/client';
 import 'tachyons';
 
 import { StrictMode } from 'react';
-import App from './app/app';
+
+import App from 'src/app';
 import './styles.css';
 
 const root = ReactDOM.createRoot(
