@@ -1,87 +1,113 @@
-import {
-  ApolloClient,
-  ApolloLink,
-  ApolloProvider,
-  createHttpLink,
-  from,
-  InMemoryCache,
-} from '@apollo/client';
-import { onError } from '@apollo/client/link/error';
-import type { GraphQLError } from 'graphql';
 import type { ReactNode } from 'react';
-import { useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from 'react';
 
-import { useAuth } from '@bliss/auth/contex-ui';
-import { route } from '@bliss/navigation/util';
-import { config } from 'src/config';
+const LOCAL_STORAGE_AUTH_KEY = 'bliss-auth';
 
-const UNAUTHENTICATED_CODE = 'UNAUTHENTICATED';
-
-const hasUnauthenticatedErrorCode = (errors?: ReadonlyArray<GraphQLError>) => {
-  return (
-    errors &&
-    errors.some((error) => error.extensions?.code === UNAUTHENTICATED_CODE)
-  );
+export type AuthUser = {
+  id: number;
+  userName: string;
+  name: string;
+  profileImageUrl: string;
 };
 
-const hasNetworkStatusCode = (error: any | undefined, code: number) => {
-  return error && error?.statusCode === code;
+export type PersistedState = {
+  token: string | null;
+  user: AuthUser | null;
 };
 
-const httpLink = createHttpLink({
-  uri: config.GRAPHQL_API,
+const initialState: PersistedState = {
+  token: null,
+  user: null,
+};
+
+export const AuthContext = createContext<{
+  token: string | null;
+  user: AuthUser | null;
+  signin: (data: { token: string; user: AuthUser }) => void;
+  signout: () => void;
+}>({
+  token: null,
+  user: null,
+  signin: () =>
+    console.error('You are using AuthContext without AuthProvider!'),
+  signout: () =>
+    console.error('You are using AuthContext without AuthProvider!'),
 });
 
-export type EnhancedApolloProviderProps = {
+export function useAuth() {
+  return useContext(AuthContext);
+}
+
+export type AuthProviderProps = {
   children: ReactNode;
 };
 
-export function EnhancedApolloProvider({
-  children,
-}: EnhancedApolloProviderProps) {
-  const navigate = useNavigate();
-  const { token, signout } = useAuth();
+export function AuthProvider({ children }: AuthProviderProps) {
+  const [state, setState] = usePersistedAuth(initialState);
 
-  const handleSignOut = useCallback(() => {
-    signout();
-    navigate(route.signIn());
-    window.location.reload();
-  }, [signout, navigate]);
+  const contextValue = useMemo(
+    () => ({
+      token: state.token,
+      user: state.user,
+      signin: ({ token, user }: { token: string; user: AuthUser }) =>
+        setState({ token, user }),
+      signout: () => setState({ token: null, user: null }),
+    }),
+    [state],
+  );
 
-  const authLink = new ApolloLink((operation, forward) => {
-    operation.setContext({
-      headers: {
-        Authorization: token ? `Bearer ${token}` : '',
-      },
-    });
+  return (
+    <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>
+  );
+}
 
-    return forward(operation);
-  });
+type AuthProviderState = { token: string | null; user: AuthUser | null };
 
-  const logoutLink = onError(({ graphQLErrors, networkError }) => {
-    if (
-      hasUnauthenticatedErrorCode(graphQLErrors) ||
-      hasNetworkStatusCode(networkError, 401)
-    ) {
-      handleSignOut();
+function usePersistedAuth(defaultState: PersistedState) {
+  const [state, setStateRaw] = useState<AuthProviderState>(() =>
+    getStorageState(defaultState),
+  );
+
+  const setState = useCallback((newState: AuthProviderState) => {
+    setStateRaw(newState);
+    setStorageState(newState);
+  }, []);
+
+  return [state, setState] as const;
+}
+
+function getStorageState(defaultState: PersistedState): PersistedState {
+  if (!window.localStorage) {
+    return defaultState;
+  }
+
+  const rawData = window.localStorage.getItem(LOCAL_STORAGE_AUTH_KEY);
+  if (!rawData) {
+    return defaultState;
+  }
+
+  try {
+    const { user, token } = JSON.parse(rawData);
+    if (token && user && user.userName && user.id && user.name) {
+      return { token, user };
     }
-  });
+  } catch {
+    // ignore
+  }
 
-  const client = new ApolloClient({
-    connectToDevTools: import.meta.env.NODE_ENV === 'development',
-    link: from([logoutLink, authLink, httpLink]),
-    cache: new InMemoryCache(),
-    defaultOptions: {
-      watchQuery: {
-        fetchPolicy: 'cache-and-network',
-      },
-      query: {
-        notifyOnNetworkStatusChange: true,
-        fetchPolicy: 'cache-first',
-      },
-    },
-  });
+  return defaultState;
+}
 
-  return <ApolloProvider client={client}>{children}</ApolloProvider>;
+function setStorageState(newState: PersistedState) {
+  if (!window.localStorage) {
+    return;
+  }
+
+  window.localStorage.setItem(LOCAL_STORAGE_AUTH_KEY, JSON.stringify(newState));
 }
