@@ -38,7 +38,6 @@ export function Quack({ quack }: QuackProps) {
           <Link to={linkToUser} className="black-90">
             <UserName name={name} /> <UserUserName userName={userName} />
           </Link>
-          {' - '}
           <span className="f6 fw4 black-60">{formatDate(createdAt)}</span>
         </div>
         <div className="black-90 pre-line break-word">{text}</div>
