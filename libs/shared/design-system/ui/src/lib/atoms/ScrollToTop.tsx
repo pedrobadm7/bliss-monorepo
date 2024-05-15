@@ -10,9 +10,9 @@ export function ScrollToTop({ children }: ScrollToTopProps) {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (import.meta.env['NODE_ENV'] === 'test') {
-      return;
-    }
+    // if (import.meta.env['NODE_ENV'] === 'test') {
+    //   return;
+    // }
     window.scrollTo(0, 0);
   }, [pathname]);
 
