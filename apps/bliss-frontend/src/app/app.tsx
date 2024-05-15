@@ -3,16 +3,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { ScrollToTop } from '@bliss/ui';
 
 import { AuthProvider } from '@bliss/auth/contex-ui';
+import { EnhancedApolloProvider } from '../utils/apollo';
 import { Routes } from './Routes';
 
 function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <AuthProvider>
+        <EnhancedApolloProvider>
           <ScrollToTop />
           <Routes />
-        </AuthProvider>
+        </EnhancedApolloProvider>
       </AuthProvider>
     </BrowserRouter>
   );

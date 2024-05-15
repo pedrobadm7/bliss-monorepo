@@ -3899,15 +3899,6 @@
         "hash": "sha512-wdsYKy5zupPyLCW2Je5DLHSxSfbIp6h80WoHOQc+RPtmPGA52O9x5MJEkv92Sjonpq+poOAtUKhh1kBGAXBrNA=="
       }
     },
-    "npm:@testing-library/jest-dom": {
-      "type": "npm",
-      "name": "npm:@testing-library/jest-dom",
-      "data": {
-        "version": "6.4.5",
-        "packageName": "@testing-library/jest-dom",
-        "hash": "sha512-AguB9yvTXmCnySBP1lWjfNNUwpbElsaQ567lt2VdGqAdHtpieLgjmcVyv1q7PMIvLbgpDdkWV5Ydv3FEejyp2A=="
-      }
-    },
     "npm:@testing-library/react": {
       "type": "npm",
       "name": "npm:@testing-library/react",
@@ -6104,15 +6095,6 @@
         "hash": "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ=="
       }
     },
-    "npm:chalk@3.0.0": {
-      "type": "npm",
-      "name": "npm:chalk@3.0.0",
-      "data": {
-        "version": "3.0.0",
-        "packageName": "chalk",
-        "hash": "sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg=="
-      }
-    },
     "npm:chalk": {
       "type": "npm",
       "name": "npm:chalk",
@@ -6770,15 +6752,6 @@
         "hash": "sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw=="
       }
     },
-    "npm:css.escape": {
-      "type": "npm",
-      "name": "npm:css.escape",
-      "data": {
-        "version": "1.5.1",
-        "packageName": "css.escape",
-        "hash": "sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg=="
-      }
-    },
     "npm:cssesc": {
       "type": "npm",
       "name": "npm:cssesc",
@@ -7274,22 +7247,13 @@
         "hash": "sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w=="
       }
     },
-    "npm:dom-accessibility-api@0.5.16": {
-      "type": "npm",
-      "name": "npm:dom-accessibility-api@0.5.16",
-      "data": {
-        "version": "0.5.16",
-        "packageName": "dom-accessibility-api",
-        "hash": "sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg=="
-      }
-    },
     "npm:dom-accessibility-api": {
       "type": "npm",
       "name": "npm:dom-accessibility-api",
       "data": {
-        "version": "0.6.3",
+        "version": "0.5.16",
         "packageName": "dom-accessibility-api",
-        "hash": "sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w=="
+        "hash": "sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg=="
       }
     },
     "npm:dom-serializer": {
@@ -10820,15 +10784,6 @@
         "hash": "sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ=="
       }
     },
-    "npm:min-indent": {
-      "type": "npm",
-      "name": "npm:min-indent",
-      "data": {
-        "version": "1.0.1",
-        "packageName": "min-indent",
-        "hash": "sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg=="
-      }
-    },
     "npm:mini-css-extract-plugin": {
       "type": "npm",
       "name": "npm:mini-css-extract-plugin",
@@ -12611,15 +12566,6 @@
         "hash": "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="
       }
     },
-    "npm:redent": {
-      "type": "npm",
-      "name": "npm:redent",
-      "data": {
-        "version": "3.0.0",
-        "packageName": "redent",
-        "hash": "sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg=="
-      }
-    },
     "npm:regenerate-unicode-properties": {
       "type": "npm",
       "name": "npm:regenerate-unicode-properties",
@@ -13653,15 +13599,6 @@
         "version": "3.0.0",
         "packageName": "strip-final-newline",
         "hash": "sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw=="
-      }
-    },
-    "npm:strip-indent": {
-      "type": "npm",
-      "name": "npm:strip-indent",
-      "data": {
-        "version": "3.0.0",
-        "packageName": "strip-indent",
-        "hash": "sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ=="
       }
     },
     "npm:strip-json-comments": {
@@ -15091,16 +15028,6 @@
         "source": "shared-design-system-ui",
         "target": "npm:formik",
         "type": "static"
-      },
-      {
-        "source": "shared-design-system-ui",
-        "target": "npm:@testing-library/jest-dom",
-        "type": "static"
-      },
-      {
-        "source": "shared-design-system-ui",
-        "target": "npm:@testing-library/react",
-        "type": "static"
       }
     ],
     "bliss-backend-e2e": [
@@ -15118,12 +15045,12 @@
     "auth-context-ui": [
       {
         "source": "auth-context-ui",
-        "target": "npm:@testing-library/react",
+        "target": "npm:react",
         "type": "static"
       },
       {
         "source": "auth-context-ui",
-        "target": "npm:react",
+        "target": "npm:@testing-library/react",
         "type": "static"
       }
     ],
@@ -15376,21 +15303,6 @@
       }
     ],
     "quack-ui": [
-      {
-        "source": "quack-ui",
-        "target": "npm:@testing-library/jest-dom",
-        "type": "static"
-      },
-      {
-        "source": "quack-ui",
-        "target": "npm:@testing-library/react",
-        "type": "static"
-      },
-      {
-        "source": "quack-ui",
-        "target": "npm:react-router-dom",
-        "type": "static"
-      },
       {
         "source": "quack-ui",
         "target": "npm:@apollo/client",
@@ -20567,7 +20479,7 @@
       },
       {
         "source": "npm:@testing-library/dom",
-        "target": "npm:dom-accessibility-api@0.5.16",
+        "target": "npm:dom-accessibility-api",
         "type": "static"
       },
       {
@@ -20578,48 +20490,6 @@
       {
         "source": "npm:@testing-library/dom",
         "target": "npm:pretty-format@27.5.1",
-        "type": "static"
-      }
-    ],
-    "npm:@testing-library/jest-dom": [
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:@adobe/css-tools",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:@babel/runtime",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:aria-query",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:chalk@3.0.0",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:css.escape",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:dom-accessibility-api",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:lodash",
-        "type": "static"
-      },
-      {
-        "source": "npm:@testing-library/jest-dom",
-        "target": "npm:redent",
         "type": "static"
       }
     ],
@@ -23310,18 +23180,6 @@
       {
         "source": "npm:chalk@2.4.2",
         "target": "npm:supports-color@5.5.0",
-        "type": "static"
-      }
-    ],
-    "npm:chalk@3.0.0": [
-      {
-        "source": "npm:chalk@3.0.0",
-        "target": "npm:ansi-styles",
-        "type": "static"
-      },
-      {
-        "source": "npm:chalk@3.0.0",
-        "target": "npm:supports-color@7.2.0",
         "type": "static"
       }
     ],
@@ -31217,18 +31075,6 @@
         "type": "static"
       }
     ],
-    "npm:redent": [
-      {
-        "source": "npm:redent",
-        "target": "npm:indent-string",
-        "type": "static"
-      },
-      {
-        "source": "npm:redent",
-        "target": "npm:strip-indent",
-        "type": "static"
-      }
-    ],
     "npm:regenerate-unicode-properties": [
       {
         "source": "npm:regenerate-unicode-properties",
@@ -32303,13 +32149,6 @@
       {
         "source": "npm:strip-ansi",
         "target": "npm:ansi-regex",
-        "type": "static"
-      }
-    ],
-    "npm:strip-indent": [
-      {
-        "source": "npm:strip-indent",
-        "target": "npm:min-indent",
         "type": "static"
       }
     ],
