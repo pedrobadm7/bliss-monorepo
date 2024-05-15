@@ -12,7 +12,15 @@ jest.mock('@bliss/auth/contex-ui', () => ({
 }));
 
 jest.mock('@bliss/auth/ui', () => ({
-  SignInTemplate: ({ isLoading, error, onSubmit }) => (
+  SignInTemplate: ({
+    isLoading,
+    error,
+    onSubmit,
+  }: {
+    isLoading: boolean;
+    error: string;
+    onSubmit: (props: { email: string; password: string }) => void;
+  }) => (
     <form
       onSubmit={() =>
         onSubmit({ email: 'test@test.com', password: 'password' })
