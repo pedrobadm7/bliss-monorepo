@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 
 import { route } from '@bliss/navigation/util';
+import { AvatarPhoto, Button, Link, NavLink } from '@bliss/ui';
 import { useAuth } from '../../../auth/context-ui';
-import { AvatarPhoto, Button, Link, NavLink } from '../../../ui';
 
 export type TopNavigationProps = Record<string, never>;
 

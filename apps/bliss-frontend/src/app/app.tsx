@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 
+import { ScrollToTop } from '@bliss/ui';
 import { AuthProvider } from '../auth/context-ui';
-import { ScrollToTop } from '../ui';
 import { EnhancedApolloProvider } from '../utils/apollo';
 import { Routes } from './Routes';
 

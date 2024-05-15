@@ -1,6 +1,6 @@
 import { route } from '@bliss/navigation/util';
+import { Heading, Link, MainSection } from '@bliss/ui';
 import { TopNavigation } from '../../../navigation/ui';
-import { Heading, Link, MainSection } from '../../../ui';
 
 import type { SignInFormProps } from '../organisms/';
 import { SignInForm } from '../organisms/';

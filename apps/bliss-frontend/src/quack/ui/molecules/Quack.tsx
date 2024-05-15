@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-import { AvatarPhoto, Link, UserName, UserUserName } from '../../../ui';
+import { AvatarPhoto, Link, UserName, UserUserName } from '@bliss/ui';
 
 import { route } from '@bliss/navigation/util';
 import { formatDate } from '../utils/date';

@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@bliss/navigation/util": ["libs/navigation/util/src/index.ts"],
+      "@bliss/ui": ["libs/shared/design-system/ui/src/index.ts"],
       "src/*": ["apps/bliss-frontend/src/app/*"]
     }
   },

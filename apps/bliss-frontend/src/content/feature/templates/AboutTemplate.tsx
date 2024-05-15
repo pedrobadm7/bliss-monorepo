@@ -1,6 +1,6 @@
 import { TopNavigation } from '../../../navigation/ui';
 
-import { Heading, MainSection } from '../../../ui';
+import { Heading, MainSection } from '@bliss/ui';
 
 export type AboutTemplateProps = Record<string, never>;
 

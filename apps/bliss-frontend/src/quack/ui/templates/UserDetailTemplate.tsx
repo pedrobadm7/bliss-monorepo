@@ -1,6 +1,5 @@
 import { gql } from '@apollo/client';
 
-import { TopNavigation } from '../../../navigation/ui';
 import {
   AvatarPhoto,
   Button,
@@ -9,7 +8,8 @@ import {
   Loading,
   MainSection,
   ReloadButton,
-} from '../../../ui';
+} from '@bliss/ui';
+import { TopNavigation } from '../../../navigation/ui';
 
 import type { QuackFormProps } from '../molecules/';
 import { QuackForm } from '../molecules/';

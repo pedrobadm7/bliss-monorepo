@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import { ErrorMessage, LoadingButton, TextArea } from '../../../ui';
+import { ErrorMessage, LoadingButton, TextArea } from '@bliss/ui';
 
 export type QuackFormProps = {
   error?: Error | null;

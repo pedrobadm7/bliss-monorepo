@@ -81,6 +81,9 @@
     "@bliss/navigation/util": [
       "libs/navigation/util/src/index.ts"
     ],
+    "@bliss/ui": [
+      "libs/shared/design-system/ui/src/index.ts"
+    ],
     "src/*": [
       "apps/bliss-frontend/src/app/*"
     ]
@@ -104,16 +107,64 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "4863409641517573816"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14537633107132275368"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "13132401969594980742"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "1858692744907916625"
+      },
+      {
+        "file": ".prettierrc.yaml",
+        "hash": "8925373694883065826"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "13350529987637173023"
+      },
+      {
+        "file": "README.md",
+        "hash": "10774334877263082508"
       },
       {
         "file": "apps/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14485992940065577570"
+      },
+      {
+        "file": "package.json",
+        "hash": "16321372261096270321"
       },
       {
         "file": "tools/tsconfig.tools.json",
@@ -121,59 +172,11 @@
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "3982716598300108323"
-      },
-      {
-        "file": "package.json",
-        "hash": "16321372261096270321"
-      },
-      {
-        "file": "README.md",
-        "hash": "10774334877263082508"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "13350529987637173023"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "235626400633494639"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "1858692744907916625"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "4863409641517573816"
-      },
-      {
-        "file": ".prettierrc.yaml",
-        "hash": "8925373694883065826"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14485992940065577570"
+        "hash": "11721427677129185560"
       },
       {
         "file": "yarn.lock",
         "hash": "10532287428809814768"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "13132401969594980742"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14537633107132275368"
       }
     ],
     "projectFileMap": {
@@ -294,48 +297,50 @@
           ]
         }
       ],
-      "bliss-backend-e2e": [
+      "navigation-util": [
         {
-          "file": "apps/bliss-backend-e2e/.eslintrc.json",
-          "hash": "8709851544463005581"
+          "file": "libs/navigation/util/.babelrc",
+          "hash": "2946678488919325452"
         },
         {
-          "file": "apps/bliss-backend-e2e/jest.config.ts",
-          "hash": "10595568347954568263"
+          "file": "libs/navigation/util/.eslintrc.json",
+          "hash": "15946965712701950674"
         },
         {
-          "file": "apps/bliss-backend-e2e/project.json",
-          "hash": "3615803632914731173"
+          "file": "libs/navigation/util/README.md",
+          "hash": "12466098475641447760"
         },
         {
-          "file": "apps/bliss-backend-e2e/src/bliss-backend/bliss-backend.spec.ts",
-          "hash": "4579662685003779048",
-          "deps": [
-            "npm:axios"
-          ]
+          "file": "libs/navigation/util/jest.config.ts",
+          "hash": "659199899424076087"
         },
         {
-          "file": "apps/bliss-backend-e2e/src/support/global-setup.ts",
-          "hash": "2568409276037275290"
+          "file": "libs/navigation/util/project.json",
+          "hash": "17068738503548244642"
         },
         {
-          "file": "apps/bliss-backend-e2e/src/support/global-teardown.ts",
-          "hash": "5275447082211835490"
+          "file": "libs/navigation/util/src/index.ts",
+          "hash": "14428353282588746736"
         },
         {
-          "file": "apps/bliss-backend-e2e/src/support/test-setup.ts",
-          "hash": "10984585515912236441",
-          "deps": [
-            "npm:axios"
-          ]
+          "file": "libs/navigation/util/src/lib/index.ts",
+          "hash": "8570450860005210146"
         },
         {
-          "file": "apps/bliss-backend-e2e/tsconfig.json",
-          "hash": "15443990093475294480"
+          "file": "libs/navigation/util/src/lib/route.ts",
+          "hash": "13799956451758819534"
         },
         {
-          "file": "apps/bliss-backend-e2e/tsconfig.spec.json",
-          "hash": "14954872453723519891"
+          "file": "libs/navigation/util/tsconfig.json",
+          "hash": "5803453740373313970"
+        },
+        {
+          "file": "libs/navigation/util/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        },
+        {
+          "file": "libs/navigation/util/tsconfig.spec.json",
+          "hash": "622485232520597903"
         }
       ],
       "bliss-frontend": [
@@ -380,9 +385,10 @@
         },
         {
           "file": "apps/bliss-frontend/src/app/app.tsx",
-          "hash": "10959394994540959379",
+          "hash": "7012259472543326243",
           "deps": [
-            "npm:react-router-dom"
+            "npm:react-router-dom",
+            "shared-design-system-ui"
           ]
         },
         {
@@ -459,17 +465,19 @@
         },
         {
           "file": "apps/bliss-frontend/src/auth/ui/organisms/SignInForm.tsx",
-          "hash": "4299885971899410409",
+          "hash": "18435947326754963719",
           "deps": [
             "npm:formik",
             "npm:react",
-            "npm:yup"
+            "npm:yup",
+            "shared-design-system-ui"
           ]
         },
         {
           "file": "apps/bliss-frontend/src/auth/ui/organisms/SignUpForm.tsx",
-          "hash": "4480549061656306495",
+          "hash": "9053626453802411535",
           "deps": [
+            "shared-design-system-ui",
             "npm:formik",
             "npm:react",
             "npm:yup"
@@ -481,16 +489,18 @@
         },
         {
           "file": "apps/bliss-frontend/src/auth/ui/templates/SignInTemplate.tsx",
-          "hash": "145541114594448560",
+          "hash": "17205769515775494965",
           "deps": [
-            "navigation-util"
+            "navigation-util",
+            "shared-design-system-ui"
           ]
         },
         {
           "file": "apps/bliss-frontend/src/auth/ui/templates/SignUpTemplate.tsx",
-          "hash": "5139922980653587498",
+          "hash": "10131147297619122999",
           "deps": [
-            "navigation-util"
+            "navigation-util",
+            "shared-design-system-ui"
           ]
         },
         {
@@ -511,7 +521,10 @@
         },
         {
           "file": "apps/bliss-frontend/src/content/feature/templates/AboutTemplate.tsx",
-          "hash": "2861425726139608992"
+          "hash": "3233939913557976149",
+          "deps": [
+            "shared-design-system-ui"
+          ]
         },
         {
           "file": "apps/bliss-frontend/src/navigation/ui/index.ts",
@@ -519,12 +532,13 @@
         },
         {
           "file": "apps/bliss-frontend/src/navigation/ui/organisms/TopNavigation.tsx",
-          "hash": "8087841697691368657",
+          "hash": "11266583761188603911",
           "deps": [
             "npm:@fortawesome/free-solid-svg-icons",
             "npm:@fortawesome/react-fontawesome",
             "npm:react-router-dom",
-            "navigation-util"
+            "navigation-util",
+            "shared-design-system-ui"
           ]
         },
         {
@@ -533,15 +547,17 @@
         },
         {
           "file": "apps/bliss-frontend/src/navigation/ui/templates/PageNotFound.tsx",
-          "hash": "2943853594320344348",
+          "hash": "14339645496137041406",
           "deps": [
-            "navigation-util"
+            "navigation-util",
+            "shared-design-system-ui"
           ]
         },
         {
           "file": "apps/bliss-frontend/src/navigation/ui/templates/Placeholder.tsx",
-          "hash": "14719273642162855015",
+          "hash": "158843436049449556",
           "deps": [
+            "shared-design-system-ui",
             "npm:react"
           ]
         },
@@ -580,17 +596,19 @@
         },
         {
           "file": "apps/bliss-frontend/src/quack/ui/molecules/Quack.tsx",
-          "hash": "12660328206579828552",
+          "hash": "3384742742365178899",
           "deps": [
             "npm:@apollo/client",
+            "shared-design-system-ui",
             "navigation-util"
           ]
         },
         {
           "file": "apps/bliss-frontend/src/quack/ui/molecules/QuackForm.tsx",
-          "hash": "16238290072070810352",
+          "hash": "9164163824341985292",
           "deps": [
-            "npm:classnames"
+            "npm:classnames",
+            "shared-design-system-ui"
           ]
         },
         {
@@ -599,9 +617,10 @@
         },
         {
           "file": "apps/bliss-frontend/src/quack/ui/organisms/QuackList.tsx",
-          "hash": "10442553791600329831",
+          "hash": "16005123346058346501",
           "deps": [
-            "npm:@apollo/client"
+            "npm:@apollo/client",
+            "shared-design-system-ui"
           ]
         },
         {
@@ -610,16 +629,18 @@
         },
         {
           "file": "apps/bliss-frontend/src/quack/ui/templates/HomeTemplate.tsx",
-          "hash": "11789349435168640467",
+          "hash": "3120735713749956471",
           "deps": [
-            "npm:@apollo/client"
+            "npm:@apollo/client",
+            "shared-design-system-ui"
           ]
         },
         {
           "file": "apps/bliss-frontend/src/quack/ui/templates/UserDetailTemplate.tsx",
-          "hash": "3842539240165019454",
+          "hash": "15227226398261701518",
           "deps": [
-            "npm:@apollo/client"
+            "npm:@apollo/client",
+            "shared-design-system-ui"
           ]
         },
         {
@@ -632,199 +653,6 @@
           "deps": [
             "npm:date-fns"
           ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/AvatarPhoto.tsx",
-          "hash": "730057591757914164",
-          "deps": [
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Button.tsx",
-          "hash": "10084179915772501768",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Checkbox.tsx",
-          "hash": "1243003810785008309",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/ErrorBanner.tsx",
-          "hash": "17089245963110026955",
-          "deps": [
-            "npm:react",
-            "npm:classnames",
-            "npm:@fortawesome/react-fontawesome",
-            "npm:@fortawesome/free-solid-svg-icons"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/ErrorMessage.tsx",
-          "hash": "7611934628742769005",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Heading.tsx",
-          "hash": "13416399546323294396",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/InlineTextInput.tsx",
-          "hash": "7449905834748127247",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Label.tsx",
-          "hash": "3732851814784333891",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Link.tsx",
-          "hash": "17536154679372296956",
-          "deps": [
-            "npm:classnames",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Loading.tsx",
-          "hash": "13578747630523865302",
-          "deps": [
-            "npm:@fortawesome/react-fontawesome",
-            "npm:@fortawesome/free-solid-svg-icons"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/MainSection.tsx",
-          "hash": "4964187858709501684",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/NavLink.tsx",
-          "hash": "8903525890671725394",
-          "deps": [
-            "npm:classnames",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/QuackText.tsx",
-          "hash": "13810342314602258572",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/ScrollToTop.tsx",
-          "hash": "9172088763726436079",
-          "deps": [
-            "npm:react",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/SmallButton.tsx",
-          "hash": "5178737729753646691",
-          "deps": [
-            "npm:classnames",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/Spinner.tsx",
-          "hash": "16553696182418420888",
-          "deps": [
-            "npm:@fortawesome/react-fontawesome",
-            "npm:@fortawesome/free-solid-svg-icons"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/TextArea.tsx",
-          "hash": "15064564071772948375",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/TextInput.tsx",
-          "hash": "2032210906277885584",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/TransparentButton.tsx",
-          "hash": "12001732764205635451",
-          "deps": [
-            "npm:react",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/UserName.tsx",
-          "hash": "14815454461051519295"
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/UserUserName.tsx",
-          "hash": "11442513029083162806"
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/atoms/index.ts",
-          "hash": "11970142818572703961"
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/index.ts",
-          "hash": "4347018306498884420"
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/molecules/Field.tsx",
-          "hash": "316432356812027735"
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/molecules/FormikField.tsx",
-          "hash": "4567685209041498118",
-          "deps": [
-            "npm:formik"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/molecules/LoadingButton.tsx",
-          "hash": "8339843891078272335"
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/molecules/ReloadButton.tsx",
-          "hash": "17488976789099839205",
-          "deps": [
-            "npm:@fortawesome/react-fontawesome",
-            "npm:@fortawesome/free-solid-svg-icons"
-          ]
-        },
-        {
-          "file": "apps/bliss-frontend/src/ui/molecules/index.ts",
-          "hash": "18037863955956698153"
         },
         {
           "file": "apps/bliss-frontend/src/utils/apollo.tsx",
@@ -864,50 +692,279 @@
           ]
         }
       ],
-      "navigation-util": [
+      "shared-design-system-ui": [
         {
-          "file": "libs/navigation/util/.babelrc",
+          "file": "libs/shared/design-system/ui/.babelrc",
           "hash": "2946678488919325452"
         },
         {
-          "file": "libs/navigation/util/.eslintrc.json",
-          "hash": "15946965712701950674"
+          "file": "libs/shared/design-system/ui/.eslintrc.json",
+          "hash": "12678463301772327123"
         },
         {
-          "file": "libs/navigation/util/README.md",
-          "hash": "12466098475641447760"
+          "file": "libs/shared/design-system/ui/README.md",
+          "hash": "18369192780444377031"
         },
         {
-          "file": "libs/navigation/util/jest.config.ts",
-          "hash": "659199899424076087"
+          "file": "libs/shared/design-system/ui/jest.config.ts",
+          "hash": "17836478144457415509"
         },
         {
-          "file": "libs/navigation/util/project.json",
-          "hash": "17068738503548244642"
+          "file": "libs/shared/design-system/ui/project.json",
+          "hash": "8507060406385581094"
         },
         {
-          "file": "libs/navigation/util/src/index.ts",
+          "file": "libs/shared/design-system/ui/src/index.ts",
           "hash": "14428353282588746736"
         },
         {
-          "file": "libs/navigation/util/tsconfig.json",
-          "hash": "5803453740373313970"
+          "file": "libs/shared/design-system/ui/src/lib/atoms/AvatarPhoto.tsx",
+          "hash": "730057591757914164",
+          "deps": [
+            "npm:classnames"
+          ]
         },
         {
-          "file": "libs/navigation/util/tsconfig.lib.json",
-          "hash": "12782505187182166395"
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Button.tsx",
+          "hash": "10084179915772501768",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
         },
         {
-          "file": "libs/navigation/util/tsconfig.spec.json",
-          "hash": "622485232520597903"
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Checkbox.tsx",
+          "hash": "1243003810785008309",
+          "deps": [
+            "npm:react"
+          ]
         },
         {
-          "file": "libs/navigation/util/src/lib/route.ts",
-          "hash": "13799956451758819534"
+          "file": "libs/shared/design-system/ui/src/lib/atoms/ErrorBanner.tsx",
+          "hash": "17089245963110026955",
+          "deps": [
+            "npm:react",
+            "npm:classnames",
+            "npm:@fortawesome/react-fontawesome",
+            "npm:@fortawesome/free-solid-svg-icons"
+          ]
         },
         {
-          "file": "libs/navigation/util/src/lib/index.ts",
-          "hash": "8570450860005210146"
+          "file": "libs/shared/design-system/ui/src/lib/atoms/ErrorMessage.tsx",
+          "hash": "7611934628742769005",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Heading.tsx",
+          "hash": "13416399546323294396",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/InlineTextInput.tsx",
+          "hash": "7449905834748127247",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Label.tsx",
+          "hash": "3732851814784333891",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Link.tsx",
+          "hash": "17536154679372296956",
+          "deps": [
+            "npm:classnames",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Loading.tsx",
+          "hash": "13578747630523865302",
+          "deps": [
+            "npm:@fortawesome/react-fontawesome",
+            "npm:@fortawesome/free-solid-svg-icons"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/MainSection.tsx",
+          "hash": "4964187858709501684",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/NavLink.tsx",
+          "hash": "8903525890671725394",
+          "deps": [
+            "npm:classnames",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/QuackText.tsx",
+          "hash": "13810342314602258572",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/ScrollToTop.tsx",
+          "hash": "9172088763726436079",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/SmallButton.tsx",
+          "hash": "5178737729753646691",
+          "deps": [
+            "npm:classnames",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/Spinner.tsx",
+          "hash": "16553696182418420888",
+          "deps": [
+            "npm:@fortawesome/react-fontawesome",
+            "npm:@fortawesome/free-solid-svg-icons"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/TextArea.tsx",
+          "hash": "15064564071772948375",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/TextInput.tsx",
+          "hash": "2032210906277885584",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/TransparentButton.tsx",
+          "hash": "12001732764205635451",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/UserName.tsx",
+          "hash": "14815454461051519295"
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/UserUserName.tsx",
+          "hash": "11442513029083162806"
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/atoms/index.ts",
+          "hash": "11970142818572703961"
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/index.ts",
+          "hash": "4347018306498884420"
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/molecules/Field.tsx",
+          "hash": "316432356812027735"
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/molecules/FormikField.tsx",
+          "hash": "4567685209041498118",
+          "deps": [
+            "npm:formik"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/molecules/LoadingButton.tsx",
+          "hash": "8339843891078272335"
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/molecules/ReloadButton.tsx",
+          "hash": "17488976789099839205",
+          "deps": [
+            "npm:@fortawesome/react-fontawesome",
+            "npm:@fortawesome/free-solid-svg-icons"
+          ]
+        },
+        {
+          "file": "libs/shared/design-system/ui/src/lib/molecules/index.ts",
+          "hash": "18037863955956698153"
+        },
+        {
+          "file": "libs/shared/design-system/ui/tsconfig.json",
+          "hash": "11799624189472982038"
+        },
+        {
+          "file": "libs/shared/design-system/ui/tsconfig.lib.json",
+          "hash": "3190359746942612580"
+        },
+        {
+          "file": "libs/shared/design-system/ui/tsconfig.spec.json",
+          "hash": "873295446410179192"
+        }
+      ],
+      "bliss-backend-e2e": [
+        {
+          "file": "apps/bliss-backend-e2e/.eslintrc.json",
+          "hash": "8709851544463005581"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/jest.config.ts",
+          "hash": "10595568347954568263"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/project.json",
+          "hash": "3615803632914731173"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/bliss-backend/bliss-backend.spec.ts",
+          "hash": "4579662685003779048",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/src/support/test-setup.ts",
+          "hash": "10984585515912236441",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/bliss-backend-e2e/tsconfig.json",
+          "hash": "15443990093475294480"
+        },
+        {
+          "file": "apps/bliss-backend-e2e/tsconfig.spec.json",
+          "hash": "14954872453723519891"
         }
       ]
     }

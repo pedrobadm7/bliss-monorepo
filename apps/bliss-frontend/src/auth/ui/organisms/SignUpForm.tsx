@@ -1,9 +1,8 @@
+import { ErrorBanner, FormikField, LoadingButton } from '@bliss/ui';
 import type { FormikConfig } from 'formik';
 import { Form, Formik } from 'formik';
 import type { ReactNode } from 'react';
 import * as yup from 'yup';
-
-import { ErrorBanner, FormikField, LoadingButton } from '../../../ui';
 
 const initialValues = {
   email: '',

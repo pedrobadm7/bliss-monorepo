@@ -1,5 +1,52 @@
 {
   "nodes": {
+    "shared-design-system-ui": {
+      "name": "shared-design-system-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared/design-system/ui",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/shared/design-system/ui",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/shared/design-system/ui/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "shared-design-system-ui",
+        "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/shared/design-system/ui/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
     "bliss-backend-e2e": {
       "name": "bliss-backend-e2e",
       "type": "lib",
@@ -13590,6 +13637,33 @@
     }
   },
   "dependencies": {
+    "shared-design-system-ui": [
+      {
+        "source": "shared-design-system-ui",
+        "target": "npm:classnames",
+        "type": "static"
+      },
+      {
+        "source": "shared-design-system-ui",
+        "target": "npm:@fortawesome/react-fontawesome",
+        "type": "static"
+      },
+      {
+        "source": "shared-design-system-ui",
+        "target": "npm:@fortawesome/free-solid-svg-icons",
+        "type": "static"
+      },
+      {
+        "source": "shared-design-system-ui",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "shared-design-system-ui",
+        "target": "npm:formik",
+        "type": "static"
+      }
+    ],
     "bliss-backend-e2e": [
       {
         "source": "bliss-backend-e2e",
@@ -13612,6 +13686,11 @@
       {
         "source": "bliss-frontend",
         "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "bliss-frontend",
+        "target": "shared-design-system-ui",
         "type": "static"
       },
       {

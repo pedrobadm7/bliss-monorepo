@@ -1,5 +1,5 @@
+import { Heading, MainSection } from '@bliss/ui';
 import type { ReactNode } from 'react';
-import { Heading, MainSection } from '../../../ui';
 import { TopNavigation } from '../organisms';
 
 export type PlaceholderProps = {
