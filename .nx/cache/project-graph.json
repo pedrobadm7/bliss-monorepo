@@ -90,6 +90,100 @@
         "tags": []
       }
     },
+    "auth-context-ui": {
+      "name": "auth-context-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/auth/context-ui",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/auth/context-ui",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/auth/context-ui/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "auth-context-ui",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/auth/context-ui/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "content-feature": {
+      "name": "content-feature",
+      "type": "lib",
+      "data": {
+        "root": "libs/content/feature",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/content/feature",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/content/feature/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "content-feature",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/content/feature/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
     "navigation-util": {
       "name": "navigation-util",
       "type": "lib",
@@ -336,6 +430,241 @@
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/bliss-backend/src",
         "projectType": "application",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "navigation-ui": {
+      "name": "navigation-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/navigation/ui",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/navigation/ui",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/navigation/ui/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "navigation-ui",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/navigation/ui/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "quack-feature": {
+      "name": "quack-feature",
+      "type": "lib",
+      "data": {
+        "root": "libs/quack/feature",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/quack/feature",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/quack/feature/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "quack-feature",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/quack/feature/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "auth-feature": {
+      "name": "auth-feature",
+      "type": "lib",
+      "data": {
+        "root": "libs/auth/feature",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/auth/feature",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/auth/feature/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "auth-feature",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/auth/feature/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "quack-ui": {
+      "name": "quack-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/quack/ui",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/quack/ui",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/quack/ui/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "quack-ui",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/quack/ui/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "auth-ui": {
+      "name": "auth-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/auth/ui",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "libs/auth/ui",
+              "command": "eslint ."
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/auth/ui/jest.config.ts"
+            },
+            "configurations": {}
+          }
+        },
+        "name": "auth-ui",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/auth/ui/src",
+        "projectType": "library",
         "tags": [],
         "implicitDependencies": []
       }
@@ -13676,11 +14005,44 @@
         "type": "static"
       }
     ],
+    "auth-context-ui": [],
+    "content-feature": [
+      {
+        "source": "content-feature",
+        "target": "navigation-ui",
+        "type": "static"
+      },
+      {
+        "source": "content-feature",
+        "target": "shared-design-system-ui",
+        "type": "static"
+      }
+    ],
     "navigation-util": [],
     "bliss-frontend": [
       {
         "source": "bliss-frontend",
+        "target": "content-feature",
+        "type": "static"
+      },
+      {
+        "source": "bliss-frontend",
+        "target": "auth-feature",
+        "type": "static"
+      },
+      {
+        "source": "bliss-frontend",
+        "target": "navigation-ui",
+        "type": "static"
+      },
+      {
+        "source": "bliss-frontend",
         "target": "navigation-util",
+        "type": "static"
+      },
+      {
+        "source": "bliss-frontend",
+        "target": "quack-feature",
         "type": "static"
       },
       {
@@ -13695,42 +14057,12 @@
       },
       {
         "source": "bliss-frontend",
+        "target": "auth-context-ui",
+        "type": "static"
+      },
+      {
+        "source": "bliss-frontend",
         "target": "npm:tachyons",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:@testing-library/user-event",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:formik",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:yup",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:@fortawesome/free-solid-svg-icons",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:@fortawesome/react-fontawesome",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:classnames",
-        "type": "static"
-      },
-      {
-        "source": "bliss-frontend",
-        "target": "npm:date-fns",
         "type": "static"
       },
       {
@@ -13778,6 +14110,141 @@
       {
         "source": "bliss-backend",
         "target": "npm:argon2",
+        "type": "static"
+      }
+    ],
+    "navigation-ui": [
+      {
+        "source": "navigation-ui",
+        "target": "npm:@fortawesome/free-solid-svg-icons",
+        "type": "static"
+      },
+      {
+        "source": "navigation-ui",
+        "target": "npm:@fortawesome/react-fontawesome",
+        "type": "static"
+      },
+      {
+        "source": "navigation-ui",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "navigation-ui",
+        "target": "auth-context-ui",
+        "type": "static"
+      },
+      {
+        "source": "navigation-ui",
+        "target": "navigation-util",
+        "type": "static"
+      },
+      {
+        "source": "navigation-ui",
+        "target": "shared-design-system-ui",
+        "type": "static"
+      }
+    ],
+    "quack-feature": [
+      {
+        "source": "quack-feature",
+        "target": "auth-context-ui",
+        "type": "static"
+      },
+      {
+        "source": "quack-feature",
+        "target": "quack-ui",
+        "type": "static"
+      },
+      {
+        "source": "quack-feature",
+        "target": "navigation-ui",
+        "type": "static"
+      },
+      {
+        "source": "quack-feature",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      }
+    ],
+    "auth-feature": [
+      {
+        "source": "auth-feature",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "auth-feature",
+        "target": "auth-context-ui",
+        "type": "static"
+      },
+      {
+        "source": "auth-feature",
+        "target": "auth-ui",
+        "type": "static"
+      },
+      {
+        "source": "auth-feature",
+        "target": "navigation-util",
+        "type": "static"
+      }
+    ],
+    "quack-ui": [
+      {
+        "source": "quack-ui",
+        "target": "shared-design-system-ui",
+        "type": "static"
+      },
+      {
+        "source": "quack-ui",
+        "target": "navigation-util",
+        "type": "static"
+      },
+      {
+        "source": "quack-ui",
+        "target": "npm:classnames",
+        "type": "static"
+      },
+      {
+        "source": "quack-ui",
+        "target": "navigation-ui",
+        "type": "static"
+      },
+      {
+        "source": "quack-ui",
+        "target": "npm:date-fns",
+        "type": "static"
+      }
+    ],
+    "auth-ui": [
+      {
+        "source": "auth-ui",
+        "target": "npm:@testing-library/user-event",
+        "type": "static"
+      },
+      {
+        "source": "auth-ui",
+        "target": "npm:formik",
+        "type": "static"
+      },
+      {
+        "source": "auth-ui",
+        "target": "npm:yup",
+        "type": "static"
+      },
+      {
+        "source": "auth-ui",
+        "target": "shared-design-system-ui",
+        "type": "static"
+      },
+      {
+        "source": "auth-ui",
+        "target": "navigation-ui",
+        "type": "static"
+      },
+      {
+        "source": "auth-ui",
+        "target": "navigation-util",
         "type": "static"
       }
     ],

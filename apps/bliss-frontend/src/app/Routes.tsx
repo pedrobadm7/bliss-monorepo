@@ -1,9 +1,9 @@
+import { AboutPage } from '@bliss/content/feature';
+import { SignInPage, SignUpPage } from '@bliss/navigation/feature';
+import { PageNotFound } from '@bliss/navigation/ui';
 import { route } from '@bliss/navigation/util';
+import { HomePage, UserDetailPage } from '@bliss/quack/feature';
 import { Route, Routes as RouterRoutes } from 'react-router-dom';
-import { SignInPage, SignUpPage } from '../auth/feature';
-import { AboutPage } from '../content/feature';
-import { PageNotFound } from '../navigation/ui';
-import { HomePage, UserDetailPage } from '../quack/feature';
 
 export function Routes() {
   return (

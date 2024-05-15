@@ -12,9 +12,9 @@ import type { ReactNode } from 'react';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { useAuth } from '@bliss/auth/contex-ui';
 import { route } from '@bliss/navigation/util';
 import { config } from 'src/config';
-import { useAuth } from '../auth/context-ui';
 
 const UNAUTHENTICATED_CODE = 'UNAUTHENTICATED';
 
