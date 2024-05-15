@@ -1,4 +1,4 @@
-import { route } from '../../../Routes';
+import { route } from 'src/Routes';
 import { Link } from '../../../ui';
 
 import { Placeholder } from './Placeholder';

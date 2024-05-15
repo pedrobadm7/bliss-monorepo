@@ -12,9 +12,9 @@ import type { ReactNode } from 'react';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { config } from 'src/config';
+import { route } from 'src/Routes';
 import { useAuth } from '../auth/context-ui';
-import { config } from '../config';
-import { route } from '../Routes';
 
 const UNAUTHENTICATED_CODE = 'UNAUTHENTICATED';
 

@@ -1,4 +1,4 @@
-import { route } from '../../../Routes';
+import { route } from 'src/Routes';
 import { TopNavigation } from '../../../navigation/ui';
 import { Heading, Link, MainSection } from '../../../ui';
 

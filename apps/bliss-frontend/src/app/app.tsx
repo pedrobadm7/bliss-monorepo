@@ -1,9 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Routes } from '../Routes';
 
 import { AuthProvider } from '../auth/context-ui';
 import { ScrollToTop } from '../ui';
 import { EnhancedApolloProvider } from '../utils/apollo';
+import { Routes } from './Routes';
 
 function App() {
   return (
