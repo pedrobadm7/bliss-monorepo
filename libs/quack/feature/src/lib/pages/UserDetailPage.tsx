@@ -5,7 +5,7 @@ import { UserDetailTemplate } from '@bliss/quack/ui';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const USER_DETAIL_QUERY = gql`
+export const USER_DETAIL_QUERY = gql`
   query UserDetail($userName: String!) {
     user(userName: $userName) {
       ...UserDetailTemplate_user
@@ -15,7 +15,7 @@ const USER_DETAIL_QUERY = gql`
   ${UserDetailTemplate.fragments.user}
 `;
 
-const QUACK_MUTATION = gql`
+export const QUACK_MUTATION = gql`
   mutation Quack($userId: Int!, $text: String!) {
     addQuack(userId: $userId, text: $text) {
       id

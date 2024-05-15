@@ -3,7 +3,7 @@ import { useAuth } from '@bliss/auth/contex-ui';
 import { HomeTemplate } from '@bliss/quack/ui';
 import { useState } from 'react';
 
-const QUACKS_QUERY = gql`
+export const QUACKS_QUERY = gql`
   query Quacks {
     quacks {
       ...HomeTemplate_quacks
@@ -13,7 +13,7 @@ const QUACKS_QUERY = gql`
   ${HomeTemplate.fragments.quacks}
 `;
 
-const QUACK_MUTATION = gql`
+export const QUACK_MUTATION = gql`
   mutation Quack($userId: Int!, $text: String!) {
     addQuack(userId: $userId, text: $text) {
       id
@@ -23,7 +23,7 @@ const QUACK_MUTATION = gql`
 
 export type HomePageProps = Record<string, never>;
 
-export function HomePage(props: HomePageProps) {
+export function HomePage() {
   const { user } = useAuth();
 
   const quacksState = useQuery(QUACKS_QUERY);

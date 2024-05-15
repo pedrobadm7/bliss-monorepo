@@ -25,7 +25,7 @@ describe('QuackList component', () => {
         quacks={[]}
         isLoading={false}
         error={mockError}
-        refetch={() => {}}
+        refetch={() => console.log('refetch')}
       />,
     );
 
