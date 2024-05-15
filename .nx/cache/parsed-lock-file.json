@@ -9,9 +9,9 @@
         "hash": "sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw=="
       }
     },
-    "npm:@apollo/client@3.10.3": {
+    "npm:@apollo/client": {
       "type": "npm",
-      "name": "npm:@apollo/client@3.10.3",
+      "name": "npm:@apollo/client",
       "data": {
         "version": "3.10.3",
         "packageName": "@apollo/client",
@@ -3015,9 +3015,9 @@
         "hash": "sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A=="
       }
     },
-    "npm:@swc/types@0.1.6": {
+    "npm:@swc/types": {
       "type": "npm",
-      "name": "npm:@swc/types@0.1.6",
+      "name": "npm:@swc/types",
       "data": {
         "version": "0.1.6",
         "packageName": "@swc/types",
@@ -6111,9 +6111,9 @@
         "hash": "sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w=="
       }
     },
-    "npm:dom-accessibility-api": {
+    "npm:dom-accessibility-api@0.5.16": {
       "type": "npm",
-      "name": "npm:dom-accessibility-api",
+      "name": "npm:dom-accessibility-api@0.5.16",
       "data": {
         "version": "0.5.16",
         "packageName": "dom-accessibility-api",
@@ -6282,9 +6282,9 @@
         "hash": "sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA=="
       }
     },
-    "npm:electron-to-chromium@1.4.767": {
+    "npm:electron-to-chromium": {
       "type": "npm",
-      "name": "npm:electron-to-chromium@1.4.767",
+      "name": "npm:electron-to-chromium",
       "data": {
         "version": "1.4.767",
         "packageName": "electron-to-chromium",
@@ -12069,18 +12069,18 @@
         "hash": "sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow=="
       }
     },
-    "npm:supports-color@7.2.0": {
+    "npm:supports-color": {
       "type": "npm",
-      "name": "npm:supports-color@7.2.0",
+      "name": "npm:supports-color",
       "data": {
         "version": "7.2.0",
         "packageName": "supports-color",
         "hash": "sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw=="
       }
     },
-    "npm:supports-color": {
+    "npm:supports-color@8.1.1": {
       "type": "npm",
-      "name": "npm:supports-color",
+      "name": "npm:supports-color@8.1.1",
       "data": {
         "version": "8.1.1",
         "packageName": "supports-color",
@@ -13316,72 +13316,72 @@
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:@graphql-typed-document-node/core",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:@wry/caches",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:@wry/equality",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:@wry/trie",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:graphql-tag",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:hoist-non-react-statics",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:optimism",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:prop-types",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:rehackt",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:response-iterator",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:symbol-observable",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:ts-invariant",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:tslib",
       "type": "static"
     },
     {
-      "source": "npm:@apollo/client@3.10.3",
+      "source": "npm:@apollo/client",
       "target": "npm:zen-observable-ts",
       "type": "static"
     },
@@ -19687,7 +19687,7 @@
     },
     {
       "source": "npm:@swc/core",
-      "target": "npm:@swc/types@0.1.6",
+      "target": "npm:@swc/types",
       "type": "static"
     },
     {
@@ -19751,7 +19751,7 @@
       "type": "static"
     },
     {
-      "source": "npm:@swc/types@0.1.6",
+      "source": "npm:@swc/types",
       "target": "npm:@swc/counter",
       "type": "static"
     },
@@ -19787,7 +19787,7 @@
     },
     {
       "source": "npm:@testing-library/dom@9.3.4",
-      "target": "npm:dom-accessibility-api",
+      "target": "npm:dom-accessibility-api@0.5.16",
       "type": "static"
     },
     {
@@ -22217,7 +22217,7 @@
     },
     {
       "source": "npm:browserslist",
-      "target": "npm:electron-to-chromium@1.4.767",
+      "target": "npm:electron-to-chromium",
       "type": "static"
     },
     {
@@ -22237,7 +22237,7 @@
     },
     {
       "source": "npm:browserslist",
-      "target": "npm:electron-to-chromium@1.4.767",
+      "target": "npm:electron-to-chromium",
       "type": "static"
     },
     {
@@ -22257,7 +22257,7 @@
     },
     {
       "source": "npm:browserslist",
-      "target": "npm:electron-to-chromium@1.4.767",
+      "target": "npm:electron-to-chromium",
       "type": "static"
     },
     {
@@ -22277,7 +22277,7 @@
     },
     {
       "source": "npm:browserslist",
-      "target": "npm:electron-to-chromium@1.4.767",
+      "target": "npm:electron-to-chromium",
       "type": "static"
     },
     {
@@ -22297,7 +22297,7 @@
     },
     {
       "source": "npm:browserslist",
-      "target": "npm:electron-to-chromium@1.4.767",
+      "target": "npm:electron-to-chromium",
       "type": "static"
     },
     {
@@ -22602,7 +22602,7 @@
     },
     {
       "source": "npm:chalk",
-      "target": "npm:supports-color@7.2.0",
+      "target": "npm:supports-color",
       "type": "static"
     },
     {
@@ -22612,7 +22612,7 @@
     },
     {
       "source": "npm:chalk",
-      "target": "npm:supports-color@7.2.0",
+      "target": "npm:supports-color",
       "type": "static"
     },
     {
@@ -22622,7 +22622,7 @@
     },
     {
       "source": "npm:chalk",
-      "target": "npm:supports-color@7.2.0",
+      "target": "npm:supports-color",
       "type": "static"
     },
     {
@@ -22632,7 +22632,7 @@
     },
     {
       "source": "npm:chalk",
-      "target": "npm:supports-color@7.2.0",
+      "target": "npm:supports-color",
       "type": "static"
     },
     {
@@ -27722,7 +27722,7 @@
     },
     {
       "source": "npm:istanbul-lib-report",
-      "target": "npm:supports-color@7.2.0",
+      "target": "npm:supports-color",
       "type": "static"
     },
     {
@@ -29037,7 +29037,7 @@
     },
     {
       "source": "npm:jest-worker@27.5.1",
-      "target": "npm:supports-color",
+      "target": "npm:supports-color@8.1.1",
       "type": "static"
     },
     {
@@ -29052,7 +29052,7 @@
     },
     {
       "source": "npm:jest-worker@27.5.1",
-      "target": "npm:supports-color",
+      "target": "npm:supports-color@8.1.1",
       "type": "static"
     },
     {
@@ -29072,7 +29072,7 @@
     },
     {
       "source": "npm:jest-worker",
-      "target": "npm:supports-color",
+      "target": "npm:supports-color@8.1.1",
       "type": "static"
     },
     {
@@ -32526,12 +32526,12 @@
       "type": "static"
     },
     {
-      "source": "npm:supports-color@7.2.0",
+      "source": "npm:supports-color",
       "target": "npm:has-flag",
       "type": "static"
     },
     {
-      "source": "npm:supports-color",
+      "source": "npm:supports-color@8.1.1",
       "target": "npm:has-flag",
       "type": "static"
     },
