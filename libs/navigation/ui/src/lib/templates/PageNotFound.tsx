@@ -5,7 +5,7 @@ import { Placeholder } from './Placeholder';
 
 export type PageNotFoundProps = Record<string, never>;
 
-export function PageNotFound(props: PageNotFoundProps) {
+export function PageNotFound() {
   return (
     <Placeholder title="Error 404">
       <p>
