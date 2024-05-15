@@ -2,7 +2,7 @@ import { faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 
-import { route } from 'src/Routes';
+import { route } from '@bliss/navigation/util';
 import { useAuth } from '../../../auth/context-ui';
 import { AvatarPhoto, Button, Link, NavLink } from '../../../ui';
 

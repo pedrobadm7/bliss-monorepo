@@ -2,7 +2,7 @@ import { gql, useMutation } from '@apollo/client';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { route } from 'src/Routes';
+import { route } from '@bliss/navigation/util';
 import { useAuth } from '../../../auth/context-ui';
 import { SignUpTemplate } from '../../../auth/ui';
 

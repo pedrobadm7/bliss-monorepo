@@ -1,4 +1,4 @@
-import { route } from 'src/Routes';
+import { route } from '@bliss/navigation/util';
 import { Link } from '../../../ui';
 
 import { Placeholder } from './Placeholder';
